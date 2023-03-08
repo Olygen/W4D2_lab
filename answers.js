@@ -134,12 +134,31 @@ console.log(whereIsWaldo);
 whereIsWaldo[2][2] = "No One";
 
 //Access and console.log "Waldo"
+
 // console.log(whereIsWaldo[3][1][1]); TypeError: Cannot read properties of undefined (reading '1') Need to ask Christina
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
 
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+      const randomMsg = Math.floor(Math.random() * 3); // don't know why but it doesn't work w/o Math.floor
+      switch (randomMsg) {
+        case 0:
+          console.log("...human...why you taking pictures of me?...");
+          break;
+        case 1:
+          console.log("...the catnip made me do it...");
+          break;
+        case 2:
+          console.log("...why does the red dot always get away...");
+          break;
+      }
+    } else {
+      console.log("Love me, pet me! HSSSSSS!");
+    }
+  }
 
 ////////////////////////////////
 //  Find the Median
