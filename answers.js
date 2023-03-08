@@ -70,6 +70,50 @@ for (let turtle of turtles) {
 // Methods, Revisited
 ////////////////////////////////
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+// Log the index of 'Titanic'
+console.log(favMovies.indexOf('Titanic')); // Output: 8
+
+// Use the .sort method
+favMovies.sort();
+console.log(favMovies); // Output: sorted array
+
+// Use the .pop method
+favMovies.pop();
+console.log(favMovies); // Output: array with 'Fast and Furious' removed
+
+// Use the .push method
+favMovies.push('Guardians of the Galaxy');
+console.log(favMovies); // Output: array with 'Guardians of the Galaxy' added
+
+// Use the .reverse method
+favMovies.reverse();
+console.log(favMovies); // Output: reversed array
+
+// Use the .shift method
+favMovies.shift();
+console.log(favMovies); // Output: array with first element removed
+
+// Use the .unshift method
+const newLength = favMovies.unshift('The Godfather');
+console.log(favMovies); // Output: array with 'The Godfather' added and the new length of the array returned
+
+// Use the .splice method
+const djangoIndex = favMovies.indexOf('Django Unchained');
+favMovies.splice(djangoIndex, 1, 'Avatar');
+console.log(favMovies); // Output: array with 'Django Unchained' replaced by 'Avatar'
+
+// Use the .slice method
+const middleIndex = Math.floor(favMovies.length / 2);
+const lastHalf = favMovies.slice(middleIndex);
+console.log(lastHalf); // Output: array with last half of original array
+
+// Console.log final results
+console.log(favMovies);
+
+// Console.log the index of 'Fast and Furious'
+console.log(favMovies.indexOf('Fast and Furious')); // Output: -1
 
 ////////////////////////////////
 // Where is Waldo
