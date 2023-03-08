@@ -119,6 +119,22 @@ console.log(favMovies.indexOf('Fast and Furious')); // Output: -1
 // Where is Waldo
 ////////////////////////////////
 
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// // Find the index of "Eggbert"
+const eggbertIndex = whereIsWaldo.indexOf("Eggbert");
+
+// remove "Eggbert" from the array
+whereIsWaldo.splice(eggbertIndex, 1);
+console.log(whereIsWaldo);
+
+//Change "Neff" to "No One"
+whereIsWaldo[2][2] = "No One";
+
+//Access and console.log "Waldo"
+// console.log(whereIsWaldo[3][1][1]); TypeError: Cannot read properties of undefined (reading '1') Need to ask Christina
 
 ////////////////////////////////
 //  Excited Kitten
