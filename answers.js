@@ -44,12 +44,15 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"];
 plantee[2]++;
 
 // Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
+
 wolfy[3] = "Gotham City";
 
 // Give D'Art a second hometown by adding "Hawkins"
+
 dart.push("Hawkins");
 
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
+
 wolfy.shift();  // remove the first element ("Wolfy")
 wolfy.unshift("Gameboy");  // insert "Gameboy" at the beginning of the array
 
@@ -57,6 +60,11 @@ wolfy.unshift("Gameboy");  // insert "Gameboy" at the beginning of the array
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let turtle of turtles) {
+  console.log(turtle.toUpperCase());
+}
 
 ////////////////////////////////
 // Methods, Revisited
